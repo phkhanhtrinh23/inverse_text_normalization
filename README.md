@@ -33,7 +33,7 @@ To get started, you should have prior knowledge on **Python** and **Pytorch** at
 
 
 ## Results
-<img src="images/output.png"/>
+<img src="image/output.png"/>
 
 
 ## Contribution
