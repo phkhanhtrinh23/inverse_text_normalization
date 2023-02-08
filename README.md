@@ -31,7 +31,7 @@ To get started, you should have prior knowledge on **Python** and **Pytorch** at
 
 2. Read and run `main.py` to train the bert2BERT model.
 
-3. Read and run `infer.py` to predict the results. My checkpoint is saved [here](https://drive.google.com/drive/folders/1j1toeENMYnAQtz_Wg_mZMWqUE05W39mH?usp=sharing)
+3. Read and run `infer.py` to predict the results. My checkpoint is saved [here](https://drive.google.com/drive/folders/1j1toeENMYnAQtz_Wg_mZMWqUE05W39mH?usp=sharing).
 
 ## Results
 <img src="image/output.png"/>
