@@ -477,9 +477,6 @@ class DecoderInvertTextNormalization(RobertaForCausalLM):
 
 def init_tokenizer():
     tokenizer = AutoTokenizer.from_pretrained(encoder_model_name, use_fast=False)
-    # tokenizer = SourceFileLoader("envibert.tokenizer",
-    #                              os.path.join(cache_dir,
-    #                                           'envibert_tokenizer.py')).load_module().RobertaTokenizer(cache_dir)
     tokenizer.model_input_names = ["input_ids",
                                    "attention_mask",
                                    "labels"]

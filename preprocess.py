@@ -21,16 +21,6 @@ class DataCollatorInvertTextNormalization:
     label_pad_token_id: int = -100
     return_tensors: str = "pt"
 
-    def encode_list_string(self, list_text):
-        text_tokenized = self.tokenizer(list_text)
-        return self.tokenizer.pad(
-            text_tokenized,
-            padding=self.padding,
-            max_length=self.max_length,
-            pad_to_multiple_of=self.pad_to_multiple_of,
-            return_tensors='pt',
-        )
-
     def __call__(self, features, return_tensors=None):
         batch_src, batch_tgt = [], []
         for item in features:
@@ -133,7 +123,6 @@ class DataCollatorInvertTextNormalization:
 
         return features
 
-
 def create_invert_text_norm(item_1, item_2):
     src_list, tgt_list = [], []
     for src, tgt in zip(item_1, item_2):
@@ -153,7 +142,6 @@ def init_data():
 
     print("Dataset: ", dataset)
     return dataset
-
 
 def preprocess_function(batch):
 
